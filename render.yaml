@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: po-oc-checker
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /_stcore/health
+    autoDeploy: true
